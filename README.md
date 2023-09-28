@@ -4,7 +4,8 @@
 
 <h3 align="center">
     <p>基于Mindspore实现湍流建模</p>
-    <a href="https://gitee.com/KaiXuana/tmnet-ms">https://gitee.com/KaiXuana/tmnet-ms</a>
+    <p><a href="https://gitee.com/KaiXuana/tmnet-ms">https://gitee.com/KaiXuana/tmnet-ms</a></p>
+    <p><a href="https://github.com/NicholasKX/TMNetMS">https://github.com/NicholasKX/TMNetMS</a></p>
 </h3>
 
 ### 一、概述
