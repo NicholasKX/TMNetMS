@@ -1,0 +1,1 @@
+python3 train.py --config "config/turbulencenet_config.yaml"

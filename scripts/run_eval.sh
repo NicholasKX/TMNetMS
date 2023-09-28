@@ -1,0 +1,1 @@
+python3 eval.py --data_root './data' --csv_file 'duct_Re2400.csv' --fold_num 10

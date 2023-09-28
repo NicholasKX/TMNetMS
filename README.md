@@ -1,4 +1,3 @@
-# 
 <h1 align="center">
        TMNet
 </h1>
@@ -155,8 +154,3 @@ bash scripts/run_eval.sh
 # 验证
 python eval.py --data_root './data' --csv_file 'duct_Re2400.csv' --fold_num 10
 ```
-
-
-
-```
-

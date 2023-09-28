@@ -1,0 +1,13 @@
+exp_name: "exp2"
+epochs: 100
+batch_size: 2000
+data_dir: 'F:\TurbulenceModeling\data\total'
+train_input_path: "data_train_input.csv"
+train_output_path: "data_train_output.csv"
+val_input_path: False
+val_output_path: False
+logs_dir: "logs/"
+pretrained_path: None
+tensorboard: True
+
+
