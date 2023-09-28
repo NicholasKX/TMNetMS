@@ -1,3 +1,13 @@
+# 
+<h1 align="center">
+       TMNet
+</h1>
+
+<h3 align="center">
+    <p>基于Mindspore实现湍流建模</p>
+    <a href="https://gitee.com/KaiXuana/tmnet-ms">https://gitee.com/KaiXuana/tmnet-ms</a>
+</h3>
+
 ### 一、概述
 
 湍流是一种三维、非定常、有旋的强非线性多尺度流动，具有强的耗散和色散特性，普遍存在于自然界及工程问题之中，被认为是“经典物理学中最后一个未解决的问题”。
@@ -58,7 +68,7 @@ $U_{grad}, V_{grad}, W_{grad}$: 流体在x, y, z方向的速度梯度。梯度�
 
 损失函数由三部分组成
 
-$\ { Loss }=\alpha \times  M A E+\beta \times (1-R 2)+  \ \times( { PhysicsLoss })$
+$\ { Loss }=\alpha \times  M A E+\beta \times (1-R 2)+  \gamma \times( { PhysicsLoss })$
 
 $MAE$ 计算预测值和Label的平均绝对误差
 
@@ -71,7 +81,7 @@ $PhysicsLoss$ 计算预测值和Label的物理约束损失(输出的六个分量
 ### 五、评价指标
 两种评价指标：
 （1）模型预测值与真实值之间的平均绝对误差$MAE$，误差越小越好。
-（2）模型预测值与真实值之间的$R2 Score$ ($R2\in{(-\infin,1]}$)，该分数越接近于1越好。
+（2）模型预测值与真实值之间的$R2 Score$ ($R2\in{(-\infty,1]}$)，该分数越接近于1越好。
 
  针对不同的特征组合，我们进行了消融实验：
 
@@ -94,7 +104,7 @@ $PhysicsLoss$ 计算预测值和Label的物理约束损失(输出的六个分量
 |                      | True     | True       | True       | False     | True     | 0.000413 | 0.9979 |
 | 90%数据训练-顺序划分 | True     | True       | True       | True      | False    | 0.001441 | 0.4012 |
 
-### 代码结构
+### 六、代码结构
 ```shell
 model_zoo
 ├── TMNetMS                                     # 官方支持模型
@@ -144,5 +154,9 @@ bash scripts/run_eval.sh
 ```shell
 # 验证
 python eval.py --data_root './data' --csv_file 'duct_Re2400.csv' --fold_num 10
+```
+
+
+
 ```
 
